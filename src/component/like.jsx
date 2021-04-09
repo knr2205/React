@@ -17,7 +17,7 @@ class Like extends Component {
     return (
       <i
         style={{ cursor: "pointer" }}
-        className={this.props.liked ? "fa fa-heart-o" : "fa fa-heart"}
+        className={this.props.liked ? "fa fa-heart" : "fa fa-heart-o"}
         aria-hidden="true"
         onClick={() => this.props.IsMovieLike(this.props.MovieArray)}
       ></i>

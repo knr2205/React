@@ -16,8 +16,12 @@ class AppComponent extends Component {
     // const Index = NewMovie.indexOf(GetState);
     NewMovie[Index] = { ...NewMovie[Index] };
     NewMovie[Index].islike = !NewMovie[Index].islike;
+
     this.setState({ MovieGrid: NewMovie });
-    console.log(GetState);
+    // const TotalCount = this.state.MovieGrid.filter(
+    //   (count) => count.islike !== GetState.islike
+    // );
+    // console.log(TotalCount);
   };
   render() {
     return (
